@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkLogin()">
+
+<div class="topbar">
+    <div>
+        <img src="images/logo.png" class="logo-small">
+        <span>Bank App</span>
+    </div>
+
+    <span id="welcomeUser"></span>
+
+    <button onclick="logoutUser()">Logout</button>
+</div>
+
+<div class="card">
+
+    <select id="scheme">
+        <option value="1">Savings (5%)</option>
+        <option value="2">FD (7%)</option>
+        <option value="3">Loan (8%)</option>
+    </select>
+
+    <input id="principal" type="number" placeholder="Amount">
+    <input id="years" type="number" placeholder="Years">
+
+    <button onclick="calculateInterest()">Calculate</button>
+
+    <div id="results" class="hidden">
+
+        <h3 id="finalAmount"></h3>
+        <p id="interestEarned"></p>
+
+        <table>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <button onclick="goToThankYou()">Download PDF</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

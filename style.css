@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* CENTER */
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo {
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.logo-small {
+    width: 40px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: white;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* BUTTON */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2a5298;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* HIDE */
+.hidden {
+    display: none;
+}
+
+/* ERROR */
+.error {
+    color: red;
+}
