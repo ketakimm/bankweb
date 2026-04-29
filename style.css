@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
 }
 
 /* CENTER */
@@ -10,15 +10,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
 /* CARD */
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 12px;
     width: 320px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: auto;   /* THIS centers it */
+    text-align: center;
 }
 
 /* LOGO */
@@ -36,25 +38,34 @@ body {
 .topbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
-    background: white;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298);
+    color: white;
 }
 
 /* INPUTS */
 input, select {
     width: 100%;
-    padding: 8px;
-    margin: 8px 0;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 /* BUTTON */
 button {
-    width: 100%;
-    padding: 10px;
+    padding: 10px 20px;
     background: #2a5298;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
+}
+
+/* ONLY full width where needed */
+.full-btn {
+    width: 100%;
 }
 
 /* HIDE */
@@ -65,4 +76,8 @@ button {
 /* ERROR */
 .error {
     color: red;
+}
+
+button:hover {
+    background: #1e3c72;
 }
